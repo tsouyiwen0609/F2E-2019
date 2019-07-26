@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background: #BCDCE2;
+}
+.main{
+    width: 95vw;
+    height: 100vh;
+    font-family: 'Merriweather', serif;   
+    padding: 32px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header-poker{
+        margin-left: -20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .header-poker-row{
+            display: flex;
+            
+            .header-poker-card{
+                width: 128px;
+                height: 200px;
+                background: #92C6D0;    
+                margin-left: 20px;
+                position: relative;
+
+                .poker-card-suit{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+        
+    }
+    .wrap-poker{
+        height: 400px;
+        margin-left: -20px;
+        display: flex;
+        justify-content: space-between;
+
+        .wrap-poker-contain{
+            display: flex;
+
+            .wrap-poker-row{
+                width: 128px;
+                margin-left: 20px;
+                position: relative;
+
+                .wrap-poker-card-1{
+                    position: absolute;
+                }
+                .wrap-poker-card-2{
+                    position: absolute;
+                    top: 30px;
+                }
+                .wrap-poker-card-3{
+                    position: absolute;
+                    top: 60px;
+                }
+                .wrap-poker-card-4{
+                    position: absolute;
+                    top: 90px;
+                }
+                .wrap-poker-card-5{
+                    position: absolute;
+                    top: 120px;
+                }
+                .wrap-poker-card-6{
+                    position: absolute;
+                    top: 150px;
+                }
+                .wrap-poker-card-7{
+                    position: absolute;
+                    top: 180px;
+                }
+            }
+        }
+    }
+    .menu{
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .information{
+            color: #000;
+            display: flex;
+            flex-direction: column;
+
+            .score, .timer{
+                width: 150px;
+                display: flex;
+                position: relative;
+
+                span{
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+        .toolBar{
+            margin-bottom: 15px;
+            
+            .btn-toolBar{
+                border: 3px solid #000;
+                padding: 12px 24px;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+            .undo{
+                color: #000;
+                background: #FDCF00;
+            }
+            .restart{
+                color: #fff;
+                background: #DB6030;
+            }           
+            .newGame{
+                color: #fff;
+                background: #7FB464;
+            }
+        }
+    }
+}
